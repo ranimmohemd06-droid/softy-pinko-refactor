@@ -16,5 +16,4 @@ Pricing Tables are provided for your clients.
 
 **[Click here to preview the website](https://softy-pinko-master-1.vercel.app)**
 
-### UI Preview:
-![Softy Pinko](./src/assets/images/UI.jpg)
+
