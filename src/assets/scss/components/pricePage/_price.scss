@@ -1,0 +1,116 @@
+.price{
+    background-color: #f2f2fe;
+    padding: 55px 0;
+
+    .title{
+        color: colors.$black_color;
+        text-align: center;
+
+        p{
+            color: colors.$txt_color;
+            width: 40%;
+            margin: auto;
+        }
+    }
+
+    .list{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        background: colors.$white_color;
+        box-shadow: colors.$shadow;
+        border-radius: variables.$radius;
+        padding: 40px 0;
+        cursor: pointer;
+        transition: variables.$trans;
+
+        &:hover{
+            transform: translateY(-15px);
+
+            button{
+                background-color: colors.$red_color;
+            }
+        }
+
+        .popular{
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: colors.$red_color;
+            color: colors.$white_color;
+            font-size: 13px;
+            padding: 4px 16px;
+            border-radius: variables.$radius;
+            box-shadow: colors.$shadow;
+        }
+
+        .name{
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .num{
+            background-color: colors.$hover_color;
+            width: 70%;
+            margin: 0 auto 25px;
+            border-radius: variables.$radius;
+            color: colors.$white_color;
+            box-shadow: colors.$shadow;
+
+            p{
+                font-size: 20px;
+
+                span{
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .details{
+            flex: 1;
+
+            p{
+                margin-bottom: 10px;
+            }
+
+            .yes span{
+                color: #2ecc71;
+                font-weight: bold;
+            }
+
+            .no{
+                color: #aaa;
+
+                span{
+                    color: #ccc;
+                }
+            }
+        }
+
+        button{
+            align-self: center;
+            background-color: colors.$hover_color;
+            border-radius: variables.$radius;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            transition: variables.$trans;
+        }
+    }
+
+    .featured{
+        transform: scale(1.05);
+
+        &:hover{
+            transform: translateY(-15px) scale(1.05);
+        }
+
+        .num{
+            background-color: colors.$red_color;
+        }
+    }
+}

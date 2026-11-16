@@ -1,0 +1,38 @@
+.navbar{
+    /* --- start glass effect --- */
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* --- end glass effect --- */
+    margin: 10px 40px;
+    padding: 15px 25px;
+    border-radius: calc(variables.$radius + 20px);
+    box-shadow: colors.$shadow;
+    position: fixed;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    transition: variables.$trans;
+    .links{
+        margin: 0 0 0 auto;
+        color: colors.$txt_color;
+        
+        a:hover{
+            color: colors.$red_color; 
+        }
+
+        .active{
+            color: colors.$red_color;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .links {
+        flex: 1;
+        justify-content: space-evenly;
+        margin: 0 0 0 40px;
+    }
+}

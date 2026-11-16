@@ -1,0 +1,25 @@
+@media (max-width: 991px) {
+    .navbar {
+        margin: 10px 15px;
+        
+        .links{
+            text-align: center;
+            
+            .nav-link:not(:last-child){
+                margin: 5px 0;
+                position: relative;
+                
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 70%;
+                    height: 1px;
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
+}

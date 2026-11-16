@@ -1,0 +1,25 @@
+.left_row{
+    padding: 15px 55px;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 1px;
+        background-color: colors.$gray_color;
+    }
+
+    :first-child{
+        // display: flex;
+        // justify-content: center;
+        margin-bottom: 17px;
+    }
+
+    p{
+        color: colors.$txt_color
+    }
+}

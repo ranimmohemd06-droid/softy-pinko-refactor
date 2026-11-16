@@ -1,0 +1,37 @@
+    // Importing Scss Files
+@use './global/reset';
+@use './global/colors';
+@use './global/variables';
+    // Importing Header Scss Files
+@import './components/homePage/header';
+@import './components/homePage/mediaHeader';
+    // Importing Welcome Scss Files
+@import './components/homePage/welcome';
+    // Importing Card Scss Files
+@import './components/homePage/card';
+@import './components/homePage/mediaCard';
+    // Importing About Scss Files
+@import './components/aboutPage/leftAbout';
+@import './components/aboutPage/rightAbout';
+@import './components/aboutPage/mediaAbout';
+    // Importing Work Scss Files
+@import './components/workPage/work';
+@import './components/workPage/mediaWork';
+    // Importing Testimonials Scss Files
+@import './components/testi/testimonials';
+@import './components/testi/mediaTesti';
+    // Importing Price Scss Files
+@import './components/pricePage/price';
+@import './components/pricePage/mediaPrice';
+    // Importing Count Scss Files
+@import './components/countPage/count';
+@import './components/countPage/mediaCount';
+    // Importing Blog Scss Files
+@import './components/blogPage/blog';
+@import './components/blogPage/mediaBlog';
+    // Importing Contact Scss Files
+@import './components/contactPage/contact';
+@import './components/contactPage/mediaContact';
+    // Importing Footer Scss Files
+@import './components/footerPage/footer';
+@import './components/footerPage/mediaFooter';
